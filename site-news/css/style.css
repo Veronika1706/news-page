@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    background: url(https://cdn.pixabay.com/photo/2021/08/07/08/47/buildings-6528061_1280.jpg) bottom no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    color: antiquewhite;
+    font-size: 4rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+.news {
+    background-color: #fff;
+    padding: 50px 0 32px;
+}
+
+.news-bg-color:nth-child(2n) {
+    background-color: rgb(205, 224, 230);
+}
+
+article .new::before {
+    content: 'New';
+    color: red;
+    font-style: italic;
+    vertical-align: middle;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-right: 10px;
+}
+
+article {
+    width: 768px;
+    margin: 0 auto 32px;
+    padding: 6px 15px;
+    border-bottom: 1px solid rgb(128, 128, 128);
+}
+article a {
+    color: rgb(45, 47, 48);
+    text-decoration: none;
+}
+
+article a:hover {
+    color: rgb(55, 93, 93);
+}
+
+article h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 5px;
+}
+
+.article-meta {
+    color: grey;
+    margin-bottom: 5px;
+}
+
+article img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+footer {
+    padding-top: 20px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+footer .links {
+    margin-bottom: 50px;
+}
+
+footer .links > a {
+    color: dimgrey;
+    padding: 0 25px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.copyright {
+    color: darkgrey;
+    font-family: 'Times New Roman', Times, serif;
+}
